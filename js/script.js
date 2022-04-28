@@ -43,3 +43,11 @@ const team = [
     image: 'barbara-ramos-graphic-designer.jpg',
   },
 ];
+
+//stampare in console le informazioni di nome ruolo e stringa di image
+for (let index = 0; index < team.length; index++) {
+    const element = team[index];
+    console.log(element);
+}
+
+//stampare le informazioni sul Dom sottoforma di stringa 
