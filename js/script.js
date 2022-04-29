@@ -47,10 +47,9 @@ const team = [
 //stampare in console le informazioni di nome ruolo e stringa di image
 for (let i = 0; i < team.length; i++) {
     const element = team[i];
-    const objectConverter = JSON.stringify(element)
-//stampare le informazioni sul Dom sottoforma di stringa 
-    console.log(objectConverter);
-    document.querySelector(".string").innerHTML += objectConverter
+    for (let key in element) {
+      console.log(key, element[key]);
+      }
 }
-  
 
+//stampare le informazioni sul Dom sottoforma di stringa 
